@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "yarn generate && concurrently 'yarn:dev:*'",
+    "dev": "pnpm generate && concurrently 'pnpm:dev:*'",
     "generate": "nuxt generate && cp -R .output ./pocketbase",
     "dev:nuxt": "nuxt dev",
     "dev:pocketbase": "go run pocketbase/main.go serve",
@@ -11,7 +11,9 @@
   },
   "devDependencies": {
     "concurrently": "^7.4.0",
-    "nuxt": "3.0.0"
+    "nuxt": "3.0.0",
+    "vue": "^3.3.10",
+    "vue-router": "^4.2.5"
   },
   "dependencies": {
     "pocketbase": "^0.9.1"
