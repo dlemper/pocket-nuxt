@@ -3,13 +3,12 @@ const ready = true
 </script>
 
 <template>
-  
   <div>
-    <Toast />
-    <Toast position="bottom-right" group="br" />
+    <UNotifications />
+
     <NuxtLayout v-show="ready">
-      
       <NuxtLoadingIndicator />
+
       <NuxtPage />
     </NuxtLayout>
   </div>
